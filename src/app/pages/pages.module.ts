@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedpagesModule } from './sharedpages/sharedpages.module';
+import { RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { WorksComponent } from './works/works.component';
@@ -16,7 +17,7 @@ import { PagesComponent } from './pages.component';
     WorkDetailComponent,
     PagesComponent,
   ],
-  imports: [CommonModule, SharedpagesModule],
+  imports: [CommonModule, SharedpagesModule, RouterModule],
   exports: [
     AboutComponent,
     WorksComponent,
